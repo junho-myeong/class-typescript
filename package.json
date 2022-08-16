@@ -1,0 +1,23 @@
+{
+  "name": "class-typescript",
+  "version": "1.0.0",
+  "description": "object를 만드는 blueprint(청사진, 설계도)\r 클래스 이전에 obejct를 만드는 기본적이 방법은 function\r Javascript에도 class는 ES6부터 사용가능\r OOP를 위한 초석\r TS에서는 클래스도 사용자가 만드는 타입의 하나이다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junho-myeong/class-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junho-myeong/class-typescript/issues"
+  },
+  "homepage": "https://github.com/junho-myeong/class-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
