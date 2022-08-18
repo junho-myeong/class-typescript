@@ -2,7 +2,7 @@
 
 class Person51 {
   // 여기서 name과 age는 실제 프로퍼티 이다.
-  public constructor(private _name: string, private age: number) {
+  public constructor(private _name: string, private _age: number) {
   }
 
   get name() {

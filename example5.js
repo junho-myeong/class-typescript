@@ -2,9 +2,9 @@
 // getter and setter
 class Person51 {
     // 여기서 name과 age는 실제 프로퍼티 이다.
-    constructor(_name, age) {
+    constructor(_name, _age) {
         this._name = _name;
-        this.age = age;
+        this._age = _age;
     }
     get name() {
         // getter를 사용하면 실제로 데이터를 get하기 직전에 다른 기능을 추가할수 잇다.

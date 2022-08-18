@@ -72,3 +72,4 @@ console.log(p31)
 ## 상속(inherit)(example10.ts)
 
 ## 추상(abstract)(example11.ts)
+- 추상 클래스로는 객체를 만들수 없다.

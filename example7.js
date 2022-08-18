@@ -1,5 +1,6 @@
 "use strict";
 // index signatures in class(example7.ts)
+// 프로퍼티를 동적으로 생성할때 사용하는 문법이다.
 // class => object
 // {mark: 'male', jade: 'male'}
 // {chloe: 'femal', alex: 'male', anna: 'female'}

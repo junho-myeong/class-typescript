@@ -9,6 +9,7 @@ class Person81 {
     }
 }
 Person81.CITY = 'Seoul';
+Person81.SCHOOL = 'MYEONG DUK';
 const p81 = new Person81();
 p81.hello();
 // 공유를 한다는게 무슨뜻인가?

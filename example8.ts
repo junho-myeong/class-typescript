@@ -2,6 +2,7 @@
 
 class Person81 {
   static CITY = 'Seoul'
+  static SCHOOL = 'MYEONG DUK'
   hello() {
     console.log('hello', Person81.CITY)
   }
