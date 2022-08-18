@@ -1,14 +1,15 @@
 "use strict";
-// initialization in constructor parameters
-class Person3 {
-    // 파라미터에서 접근 제어자를 통해 바로 초기화 할당이 가능하다.
-    // private로 사용하면 내부 생성자 함수에 의해서 할당은 되지만, 외부에서 그 속성에 접근해서 값을 바꿀순 없다.
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+// accesiabilty
+class Person31 {
+    constructor(age) {
+        this.name = 'junho';
+        if (age === undefined) {
+            this.age = 20; // age를 매개 변수로 안받은 경우를 말한다.
+        }
+        else {
+            this.age = age; // age를 매개 변수로 받았을 경우를 말한다.
+        }
     }
-    ;
 }
-const p31 = new Person3('junho', 29);
+const p31 = new Person31(29);
 console.log(p31);
-// console.log(p31.age) // 불가

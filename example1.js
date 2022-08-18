@@ -1,32 +1,17 @@
 "use strict";
-// class
-// quick strat - class
-// class Person { // 클래스 이름은 보통 대문자로 사용한다.
-//   name;
-//   age;
-//   constructor(name: string, age: number) {
-//     this.name = name;
-//     this.age = age;
-//   }
-// }
-// const p1: Person = new Person('junho', 29)
-// console.log(p1)
-// construcotr & initializer
-class Person {
-    constructor(age) {
-        this.name = 'junho'; // 생성자 함수를 통한 초기화 방법이 아닌 바로 초기화 하는 방법이다.
-        if (age === undefined) {
-            this.age = 29;
-        }
-        else {
-            this.age = age;
-        }
-    }
-    ;
+// quickstart - class
+// 클래스 생성
+class Person11 {
 }
-const p1 = new Person(29); // default생성자에 의해서 인자가 없이, 값을 초기화 하는것이다.
-const p2 = new Person();
-console.log(p1);
-p1.age = 39;
-console.log(p1.age);
-console.log(p2);
+class Person12 {
+    constructor(name) {
+        this.name = name;
+    }
+}
+// 클래스를 통한 object생성
+// p1이라는 변수에 Person을 통해 생성된 object생성
+const p11 = new Person11();
+// 생성자를 통한 객체를 생성하면서 그 property값을 초기화 하는 방법이다.
+const p12 = new Person12("junho");
+console.log(p11);
+console.log(p12);
