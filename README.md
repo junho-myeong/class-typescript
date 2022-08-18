@@ -30,7 +30,7 @@
 - private로 설정하면 클래스 외부에서 접근할수 없다.
 - 자바스크립트에서 private지원하지 않아 오랫동안 프로퍼티나 메서드 이름앞에 _를 붙여서 표현했다.
 
-## initialization in constructor parameters
+## initialization in constructor parameters(example4.ts)
 - 객체를 초기화 할때는 생성자 함수에서(this)를 이용하거나, 변수 초기화를 통해서 default생성자를 이용하기도 하지만,
 - 생성자 함수에서 this 대신, 생성자 함수의 파라미터의 접근 제어자를 통해서(this 대신에) 객체에 초기화 값을 할당 할 수도 잇다.
 ``` ts
@@ -45,10 +45,30 @@ const p31: Person3 = new Person3('junho', 29)
 console.log(p31)
 ```
 
-## getter & setter(example4.ts)
+## getter & setter(example5.ts)
 - getter & setter
 -  getter 와 setter를 사용하는 이유는 private로 사용할때, 외부에서 값에 접근 불가하기 떄문에 
 - 이걸 해결하기 위해서 이다.
 - getter와 setter는 보통 한세트로 같이 작성해줘야 설정과 접근을 둘다 할수 잇다.
 
-# readonly properties(example5.ts)
+## readonly properties(example6.ts)
+- setting은 불가 하고 get만 할수 잇게 해준다.
+- readonly 옵션의 경우 값을 초기화 하는 부분 에서만 초기화가 가능하다.
+  1. 프로퍼티에서 초기화 하는 경우
+  1. 생성자 함수에서 초기화 하는 경우 
+
+## index signatures in class(example7.ts) - interface에 index(optional property와 비슷하다.)
+- 프로퍼티가 고정이 아니고 동적으로 바꿔 줘야할때 사용해 주는 것이다.
+- index signature같은 경우에는 property를 처음에 초기화 할필요가 없다.
+
+## static properties & methods(example8.ts)
+- 공통적으로 사용해야하는 경우에는 static property 또는 method로 사용한다.
+- 공유를 통해서 어떤 인스턴스를 생성하더 라도 그 값을 계속 가지고 가야하는 경우에 사용한다.
+
+## singleton pattern(example9.ts)
+- 어플리케이션이 실행되는 중간에 obeject가 단 한번만 생성 될때 사용
+- static을 통해서 데이터가 공유되는것을 주로 보기 위함이다.
+
+## 상속(inherit)(example10.ts)
+
+## 추상(abstract)(example11.ts)
